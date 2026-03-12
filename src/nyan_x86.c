@@ -238,7 +238,7 @@ void x86_64_emit_imul(uint8_t* buffer, int* pos, X86_64_Register src) {
     buffer[(*pos)++] = x86_make_modrm(X86_MOD_REG_REG, 5, src);
 }
 
-void x86_64emit_cqo(uint8_t* buffer, int* pos) {
+void x86_64_emit_cqo(uint8_t* buffer, int* pos) {
     buffer[(*pos)++] = 0x48;
     buffer[(*pos)++] = X86_CQO;
 }

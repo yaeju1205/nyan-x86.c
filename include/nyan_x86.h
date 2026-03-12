@@ -175,7 +175,7 @@ void x86_emit_imul(uint8_t* buffer, int* pos, X86_Register src);
 void x86_64_emit_imul(uint8_t* buffer, int* pos, X86_64_Register src);
 
 // rax 데이터를 rdx 로 옮깁니다
-void x86_64emit_cqo(uint8_t* buffer, int* pos);
+void x86_64_emit_cqo(uint8_t* buffer, int* pos);
 
 // eax 와 src 를 나눕니다
 // group3 에서 7(idiv) 을 사용합니다
