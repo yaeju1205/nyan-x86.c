@@ -248,7 +248,7 @@ void x86_emit_idiv(uint8_t* buffer, int* pos, X86_Register src) {
     buffer[(*pos)++] = x86_make_modrm(X86_MOD_REG_REG, 7, src);
 }
 
-void x86_64_emit_idiv(uint8_t* buffer, int* pos, X86_Register src) {
+void x86_64_emit_idiv(uint8_t* buffer, int* pos, X86_64_Register src) {
     uint8_t rex = 0x48;
     if (src >= 8) rex |= 0x01;
     buffer[(*pos)++] = X86_GROUP3;
